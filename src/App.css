@@ -1,0 +1,237 @@
+/* Basic elements */
+
+ul{
+    padding-inline-start: 0px !important;
+}
+
+/* Typography */
+
+@import url('https://fonts.googleapis.com/css2?family=Assistant&family=Manrope:wght@300;400;700;800&display=swap');
+
+body{
+    font-family: 'Manrope', sans-serif;
+    color: #333333 !important;
+}
+
+.headingH1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 32px;
+}
+.headingH2{
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 16px;
+}
+.padding-0{
+    padding-bottom: 0px;
+}
+
+
+/* Colors */
+.orangeskyshade {
+    background: linear-gradient(42deg, rgba(247,139,0,0.7063200280112045) 0%, rgba(255,255,255,1) 100%);
+  }
+  
+  .a1 {
+    color: #ED5506;
+  }
+  
+  .a1-bg {
+    background-color: #ED5506;
+  }
+  
+  .a2 {
+    color: #F78B00;
+  }
+  
+  .a2-bg {
+    background-color: #F78B00;
+  }
+  
+  .a3 {
+    color: #00285F;
+  }
+  
+  .a3-bg {
+    background-color: #00285F;
+  }
+  
+  .d1 {
+    color: #FFFFFF;
+  }
+  
+  .d1-bg {
+    background-color: #FFFFFF;
+    color: #F78B00;
+  }
+  
+  .d1-border {
+    outline: 2px solid #FFFFFF;
+    outline-offset: -2px;
+  }
+  
+  .d2 {
+    color: #000000;
+  }
+  
+  .d2-bg {
+    background-color: #000000;
+  }
+  
+  .d3 {
+    color: #333333;
+  }
+  
+  .d3-bg {
+    background-color: #333333;
+  }
+  
+  .d4 {
+    color: #666666;
+  }
+  
+  .d4-bg {
+    background-color: #666666;
+  }
+  
+  .d4-border {
+    outline: 2px solid #666666;
+    outline-offset: -2px;
+  }
+  
+  .d5 {
+    color: #FAFAFA;
+  }
+  
+  .d5-bg {
+    background-color: #FAFAFA;
+  }
+
+/* header styles */
+.main-body{
+    background-color: #FAFAFA;
+}
+.header-icons{
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    background-color: #00285F;
+    border-radius: 5px;
+    margin-right: 5px;
+    line-height: 10px;
+}
+.header-icons:hover{
+    background-color: #F78B00;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.header-icons:hover .text-light{
+    color: #181818 !important;
+}
+.user-name{
+    font-size: 14px;
+    margin-top: 10px;
+    padding-right: 5px;
+    color: #00285F;
+    text-decoration: none;
+}
+/* Card Design */
+.contact-card{
+    width: 100%;
+    padding: 32px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 0px 0px 16px 0px;
+    -webkit-box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+}
+.contact-card .contact-avatar{
+    height: 60px;
+    margin-right: 24px
+}
+.contact-name{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+.contact-details{
+    font-size: 14px;
+}
+.image-card{
+    max-width: 100%;
+    margin: 0px 0px 16px 0px;
+    position: relative;
+    
+}
+.post-image{
+    border-radius: 10px;
+}
+.author-name{
+    position: absolute;
+    font-size: 14px;
+    font-weight: 600;
+    color: #FFFFFF;
+    padding: 5px;
+    bottom: 0px;
+    width: 100%;
+}
+.contact-card:hover{
+    border-bottom: 5px solid #F78B00;
+    margin-top: -5px;
+    transition: 0.1s;
+    cursor: pointer;
+}
+/* Form Styling */
+.form-card{
+    width: 100%;
+    padding: 32px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    margin: 0px 0px 16px 0px;
+    -webkit-box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 0 32px 0 rgba(0, 0, 0, 0.08);
+}
+.post-form .text-input{
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    background-color: #FAFAFA;
+}
+
+/* Button Styling */
+
+.main-btn{
+    width: 100px;
+    background-color: #00285F !important;
+    color: #FFFFFF !important;
+    font-weight: 600 !important;
+}
+.main-btn:hover{
+    background-color: #F78B00 !important;
+    color: #181818 !important;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Post  styling */
+.like-icons{
+    font-size: 14px;
+}
+
+/* Media Query */
+@media (max-width: 769px){
+    .mobile-order-1{
+        order: 1
+    }
+    .headingH1{
+      padding-bottom: 32px;
+      padding-top: 32px;
+    } 
+}
+@media (min-width: 990px) and (max-width: 1400px){
+    .contact-card{
+        flex-direction: column !important;
+    }
+}
